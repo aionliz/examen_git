@@ -74,6 +74,42 @@ section {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
 }
 
+.contenedor-imagenes {
+    display: flex;
+    justify-content: space-evenly;
+    /*Igual cantidad de espacio entre imagenes o logos*/
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.icono-tech {
+    font-size: 70px;
+    /* Tamaño del icono*/
+    transition: transform 0.3s ease;
+}
+
+.icono-tech:hover {
+    transform: scale(1.15);
+}
+
+/* Colores de las marcas */
+.html-color {
+    color: #E34F26;
+    /* Naranjo como html*/
+}
+
+.css-color {
+    color: #1572B6;
+    /*Azul o celeste como css*/
+}
+
+.github-color {
+    color: #0F172A;
+    /*Negro como github*/
+}
+
 section h2 {
     color: #1E3A8A;
     margin-bottom: 15px;
