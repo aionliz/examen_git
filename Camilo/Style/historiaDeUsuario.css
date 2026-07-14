@@ -1,93 +1,70 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
 }
 
-body {
+body{
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    /* Estilo de letra bonito */
     background-color: #E2E8F0;
     color: #334155;
 }
 
-header {
+header{
     background: linear-gradient(#0F172A, #1E3A8A);
-    /* Degradado simple de azul oscuro a mas claro */
     color: white;
     padding: 40px 20px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    /* Crea una sombra suave*/
 }
 
-nav {
-    margin-top: 15px;
-    /* Separación para arriba */
+header h1{
+    margin-bottom:10px;
 }
 
-nav a {
+nav{
+    margin-top:15px;
+}
+
+nav a{
     color: white;
     text-decoration: none;
     margin: 0 15px;
     font-size: 18px;
     font-weight: 500;
-    /* Hace la letra mas gruesa */
     transition: all 0.3s ease;
-    /* Hace que cualquier que al pasar el mouse cambie en 0.3 segundos */
 }
 
-/* Efecto al pasar el mouse */
-nav a:hover {
+nav a:hover{
     color: white;
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
-    /* Hace que brillen al pasar el mouse */
 }
 
-main {
-    width: 85%;
-    max-width: 900px;
-    margin: 40px auto;
+main{
+    width:850px;
+    margin:40px auto;
 }
 
-section {
+section{
     background: white;
     padding: 30px;
     margin-bottom: 25px;
     border-radius: 12px;
-    /* Redondea la caja*/
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
     border-left: 6px solid #1E3A8A;
-    /* Agrega linea azul al lado izquierdo */
 }
 
 section h2 {
     color: #1E3A8A;
     margin-bottom: 15px;
     border-bottom: 2px solid #E2E8F0;
-    /* linea para separar texto */
     padding-bottom: 8px;
     font-size: 24px;
 }
 
-section p {
-    margin-bottom: 20px;
-}
-
-section ul {
-    padding-left: 20px;
-    /* tira los puntos de la lista un poco a la derecha */
-    margin-bottom: 20px;
-}
-
-section li {
-    margin-bottom: 12px;
-    /* Separación entre cada li */
-}
-
-footer {
+footer{
     background: linear-gradient(#1E3A8A, #0F172A);
-    /* Degradado invertido al de header*/
     color: white;
     text-align: center;
     padding: 20px;
