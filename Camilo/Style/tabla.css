@@ -54,6 +54,15 @@ section {
     border-left: 6px solid #1E3A8A;
 }
 
+.caja {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.caja:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
 section h2 {
     color: #1E3A8A;
     margin-bottom: 15px;
@@ -65,27 +74,54 @@ section h2 {
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
+    font-size: 16px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    /* Mantiene los bordes redondeados */
 }
 
-table, th, td {
-    border: 1px solid black;
+th, td {
+    padding: 12px 15px;
+    text-align: left;
 }
 
 th {
     background: #1E3A8A;
     color: white;
-    padding: 12px;
+    font-weight: 600;
 }
 
-td {
-    padding: 10px;
+tbody tr {
+    border-bottom: 1px solid #E2E8F0;
+    /* Líneas para dividir la tabla*/
+}
+
+/* Con esto se alternan las filas*/
+tbody tr:nth-child(even) {
+    background: #F1F5F9;
+}
+
+.texto-derecha {
+    text-align: right;
+}
+
+.texto-centro {
     text-align: center;
 }
 
-/* Con esto se alternan las filas */
-tr:nth-child(even) {
-    background: #F1F5F9;
+.fila-total {
+    background-color: #E2E8F0;
+    /* Color para destacar filas */
+    font-weight: bold;
+    color: #0F172A;
+}
+
+.precio-final {
+    background-color: #CBD5E1;
+    border-bottom: 2px solid #1E3A8A;
+    font-size: 18px;
 }
 
 footer {
@@ -94,5 +130,5 @@ footer {
     text-align: center;
     padding: 20px;
     font-size: 15px;
-    margin-top: 40pax;
+    margin-top: 40px;
 }

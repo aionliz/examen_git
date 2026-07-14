@@ -54,6 +54,15 @@ section {
     border-left: 6px solid #1E3A8A;
 }
 
+.caja {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.caja:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
 section h2 {
     color: #1E3A8A;
     margin-bottom: 15px;
