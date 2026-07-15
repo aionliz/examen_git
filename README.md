@@ -1,2 +1,2 @@
 # examen_git
-"Mikosss"
+Mikosss
