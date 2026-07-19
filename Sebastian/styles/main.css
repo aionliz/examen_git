@@ -1,0 +1,11 @@
+@import url(base.css);
+@import url(header.css);
+@import url(navbar.css);
+@import url(layout.css);
+@import url(footer.css);
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
