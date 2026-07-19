@@ -1,0 +1,70 @@
+nav {
+    background-color: #c50fbc;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+nav a {
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+nav a:visited {
+    color: white;
+}
+nav a:hover {
+    color: #87a987;
+}
+main {
+    background-color: #339253;
+    margin: 0;
+    padding-top: 80px;
+}
+
+.inicio-img {
+    width: 400px;
+    height: auto;
+
+}
+
+.album{
+    display: flex; 
+    align-items: center; 
+    gap: 25px;
+    width: auto;
+    max-width: 100%;
+}
+
+.juegos{
+    display: flex; 
+    flex-direction: column;
+    gap: 25px;
+    max-width: 100%;
+}
+.juego {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.juego img {
+    width: 450px; 
+    height: auto; 
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
