@@ -1,0 +1,22 @@
+.card {
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: 1fr 200px;
+    grid-template-areas: 
+    "header"
+    "info";
+    row-gap: 20px;
+    background-color: #90CAF9;
+    padding: 50px 20px;
+    place-items: center;
+
+    border-radius: 20px;
+}
+
+.card-header {
+    grid-area: header;
+}
+
+.card-info {
+    grid-area: info;
+}
