@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+        <form id="formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" required>
+        
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" required>
+
+        <label for="profesion">Ocupacion:</label>
+        <input type="text" id="ocupacion" required>
+
+        <button type="submit" class="botonXd">Agregar</button>
+    </form>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+                <th>Ocupacion</th>
+            </tr>
+        </thead>
+        <tbody id="cuerpoTabla">
+        </tbody>
+    </table>
+
+    <script>
+        const formulario = document.getElementById('formulario');
+        const cuerpoTabla = document.getElementById('cuerpoTabla');
+
+        formulario.addEventListener('submit', function(evento) {
+            evento.preventDefault();
+
+            const nombre = document.getElementById('nombre').value;
+            const apellido = document.getElementById('apellido').value;
+            const edad = document.getElementById('edad').value;
+            const ocupacion = document.getElementById('ocupacion').value;
+
+            const nuevaFila = document.createElement('tr');
+            nuevaFila.innerHTML = `
+                <td>${nombre}</td>
+                <td>${apellido}</td>
+                <td>${edad}</td>
+                <td>${ocupacion}</td>
+            `;
+
+            cuerpoTabla.appendChild(nuevaFila);
+            formulario.reset();
+        });
+    </script>
+
+
+    <footer>
+        <p>Creado por: Tomás Lillo</p>
+    </footer>
+</body>
+</html>
