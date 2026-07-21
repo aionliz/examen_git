@@ -10,7 +10,7 @@
     justify-content: center;
     background-color: #f0f0f0;
     padding: 15px;
-
+    font-size: 20px;
 }
 
 h1{
@@ -30,6 +30,7 @@ section{
     padding: 2%;
     justify-content: center;
     display: flex;
+    flex-direction: column;
 }
 footer{
     justify-content: center;
@@ -40,14 +41,48 @@ footer{
 table{
     border-color: black;
     width: 80%;
-     margin-top: 20px;
+    margin-top: 20px;
 }
 
 th, td{
-     border: 1px solid #ccc;
-      padding: 10px;
-       text-align: left;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
 }
 th{
-     background-color: #f4f4f4;
+    background-color: #f4f4f4;
+}
+
+section{
+    margin: 120px auto;
+}
+
+footer{
+    margin-top: 50px;
+}
+
+.formulario{
+    font-size: 22px;
+    gap: 20px;
+    line-height: 1.6; 
+}
+
+.botonXd{
+    color: black;
+    background-color: rgb(132, 244, 244);
+    padding: 5px 5px 5px;
+    border-radius: 10px;
+}
+
+section p{
+    margin-bottom: 20px;
+}
+
+p{
+    line-height: 1.1;
+    margin-bottom: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
 }
