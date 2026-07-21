@@ -9,8 +9,8 @@ poner aqui el nombre de usuario de github.
 7.-
 8.-
 9.-
-10.-
-11.-
+10.- Mikosss
+11.- ccreativebboy
 12.-
 13.-
 14.-
@@ -32,7 +32,7 @@ poner aqui el nombre de usuario de github.
 30.-
 31.-
 32.-
-33.-
+33.-  
 34.-
 35.-
 36.-
