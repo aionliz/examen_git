@@ -30,17 +30,22 @@ nav a:hover {
     color: #87a987;
 }
 main {
-    background-color: #339253;
     margin: 0;
     padding-top: 80px;
 }
 
 .inicio-img {
-    width: 400px;
+    width: 350px;
     height: auto;
 
 }
-
+.artista{
+    display: flex; 
+    align-items: center; 
+    gap: 25px;
+    width: auto;
+    max-width: 100%;
+}
 .album{
     display: flex; 
     align-items: center; 
@@ -67,4 +72,102 @@ main {
     border-radius: 8px;
     margin-top: 50px;
 }
+.contenedor-opciones {
+    font-family: Arial, sans-serif;
+    max-width: 300px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 
+.contenedor-opciones label {
+    font-weight: bold;
+    color: #333;
+}
+.contenedor-opciones select {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+.contenedor-opciones select:hover {
+    border-color: #007bff;
+}
+.contenedor-opciones select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}
+
+.mispadres{
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+}
+
+body .encuesta {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.encuesta-contenedor {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.pregunta {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: #28a745;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}

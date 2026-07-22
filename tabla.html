@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="encuesta">
+    <nav>
+        <ul>
+            <li><a target="_blank" href="inicio.html">Sobre Mi</a></li>
+            <li><a target="_blank" href="Artistas.html">Artistas favoritos</a></li>
+            <li><a target="_blank" href="Albums.html">Albums favoritos</a></li>
+            <li><a target="_blank" href="juegos.html">Juegos favoritos</a></li>
+            <li><a target="_blank" href="tabla.html">Encuesta para ti</a></li>
+        </ul>   
+    </nav>
+
+
+<div class="encuesta-contenedor">
+    <h2>Encuesta Personal</h2>
+    <form action="#" method="POST">
+        
+        <div class="pregunta">
+            <label for="nombre">¿Como te llamas?</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre aquí" required>
+        </div>
+        <div class="pregunta">
+            <label for="gustos">Tus gustos principales?</label>
+            <input type="text" id="gustos" name="gustos" placeholder="Ej: El nu metal" required>
+        </div>
+        <div class="pregunta">
+            <label for="hobbys">¿Qué hobbys o pasatiempos practicas?</label>
+            <input type="text" id="hobbys" name="hobbys" placeholder="Ej: Leer" required>
+        </div>
+        <div class="pregunta">
+            <label for="cosa-favorita">¿Cuál es tu cosa favorita en el mundo y por qué?</label>
+            <textarea id="cosa-favorita" name="cosa_favorita" rows="4" placeholder="Con" required></textarea>
+        </div>
+        <button type="submit">Enviar Respuestas</button>
+    </form>
+</div>
+
+
+</body>
+</html>
