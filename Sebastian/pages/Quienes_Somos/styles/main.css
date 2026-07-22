@@ -1,0 +1,29 @@
+@import url(navbar.css);
+@import url(layout.css);
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #BBDEFB;
+}
+
+h1 {
+    font-size: 60px;
+    color: #fff;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 26px ;
+}

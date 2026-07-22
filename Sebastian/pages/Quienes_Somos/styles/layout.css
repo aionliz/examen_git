@@ -1,0 +1,34 @@
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+}
+
+main section {
+    width: 28%;
+}
+
+.card {
+    padding: 60px 30px;
+    background-color: #90CAF966;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+    border-radius: 40px;
+}
+
+.card-info {
+    display: flex;
+    flex-direction:column ;
+    gap: 20px;
+}
+
+.card-info p {
+    font-size: 20px;
+}
