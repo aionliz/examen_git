@@ -1,2 +1,3 @@
-That is a carpert with the code who the teacher Liza asked for.
-Esta es una carpeta con los codigos que pidio la profesora Liza.
+# examen_git
+poner aqui el nombre de usuario de github.
+"TKS-Grey"

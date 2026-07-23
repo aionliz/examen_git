@@ -1,4 +1,5 @@
 # examen_git
+# examen_git
 poner aqui el nombre de usuario de github.
 1.- 
 2.-
@@ -9,8 +10,8 @@ poner aqui el nombre de usuario de github.
 7.-
 8.-
 9.-
-10.-
-11.-
+10.- Mikosss
+11.- ccreativebboy
 12.-
 13.-
 14.-
@@ -21,7 +22,7 @@ poner aqui el nombre de usuario de github.
 19.-
 20.-
 21.-
-22.-
+22.-TKS-Grey
 23.-
 24.-
 25.-
@@ -32,7 +33,7 @@ poner aqui el nombre de usuario de github.
 30.-
 31.-
 32.-
-33.-
+33.-  
 34.-
 35.-
 36.-
@@ -44,5 +45,3 @@ poner aqui el nombre de usuario de github.
 42.-
 43.-
 44.-
-
-
