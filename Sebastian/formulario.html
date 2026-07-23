@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <link rel="stylesheet" href="formulario.css">
 </head>
 <body>
     <header>
@@ -19,9 +20,27 @@
 
     <main>
         <section>
-            <article>
+            <form action="">
+                <div class="container_nombre" style="grid-area: nombre;">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" placeholder="Tu Nombre">
+                </div>
 
-            </article>
+                <div class="container_motivo_contacto" style="grid-area: motivo;">
+                    <label for="motivo_contacto">¿Porque me quieres contactar?</label>
+                    <select name="Motivo de Contacto" id="">
+                        <option value="motivo">Trabajo</option>
+                        <option value="motivo">Duda/Consulta</option>
+                        <option value="motivo">Otro</option>
+                    </select>
+                </div>
+
+                <div style="grid-area: explicacion;">
+                    <textarea name="explicacion_contacto" placeholder="Explica el motivo del contacto"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar" style="grid-area: enviar;" class="button_submit">
+            </form>
         </section>
     </main>
 

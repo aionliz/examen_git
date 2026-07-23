@@ -5,26 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>  
 
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header>
-        <h1>Inicio</h1>
-        <p>Desliza para continuar</p>
-    </header>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="mi_historia.html">Mi historia</a>
+            <a href="formulario.html">Formulario</a>
+            <a href="mis_suenos.html">Mis sueños</a>
+        </nav>
 
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="mi_historia.html">Mi historia</a>
-        <a href="formulario.html">Formulario</a>
-        <a href="mis_suenos.html">Mis sueños</a>
-    </nav>
+        <h1>Sebastian Pereira</h1>
+    </header>
 
     <main>
         <section class="introduccion">
-            <article>
-
+            <article style="grid-area: header-intro" class="header-intro">
+                <h2>Secciones de la Pagina</h2>
             </article>
+
+            <article style="grid-area: card-intro-1" class="card-intro">
+                <h3>Mi Historia</h3>
+                <p>En esta seccion exploraremos mi Historia ¿Quien soy yo?</p>
+            </article>
+
+            <article style="grid-area: card-intro-2" class="card-intro">
+                <h3>Formulario</h3>
+                <p>¿Me quieres contactar? Mandame un mensaje</p>
+            </article>
+
+            <article style="grid-area: card-intro-3" class="card-intro"> 
+                <h3>Mis Sueños</h3>
+                <p>¿Quieres conocer las cosas que me gustan?, probablemente no, pero aqui estan </p>
+            </article>
+
         </section>
     </main>
 
