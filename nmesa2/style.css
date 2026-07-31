@@ -1,0 +1,186 @@
+nav {
+    background-color: #c50fbc;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+nav a {
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+nav a:visited {
+    color: white;
+}
+nav a:hover {
+    color: #87a987;
+}
+main {
+    margin: 0;
+    padding-top: 80px;
+}
+
+.inicio-img {
+    width: 350px;
+    height: auto;
+
+}
+.artista{
+    display: flex; 
+    align-items: center; 
+    gap: 25px;
+    width: auto;
+    max-width: 100%;
+}
+.album{
+    display: flex; 
+    align-items: center; 
+    gap: 25px;
+    width: auto;
+    max-width: 100%;
+}
+
+.juegos{
+    display: flex; 
+    flex-direction: column;
+    gap: 25px;
+    max-width: 100%;
+}
+.juego {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.juego img {
+    width: 450px; 
+    height: auto; 
+    border-radius: 8px;
+    margin-top: 50px;
+}
+.contenedor-opciones {
+    font-family: Arial, sans-serif;
+    max-width: 300px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contenedor-opciones label {
+    font-weight: bold;
+    color: #333;
+}
+.contenedor-opciones select {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+.contenedor-opciones select:hover {
+    border-color: #007bff;
+}
+.contenedor-opciones select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}
+
+.mispadres{
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+}
+
+body .encuesta {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.encuesta-contenedor {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.pregunta {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: #28a745;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.footer-sencillo{
+    background-color: white;
+    color: rgb(13, 187, 22);
+    padding: 10px 0;
+    text-align: center;
+    font-family: sans-serif;
+}
+.footer-contenido{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}

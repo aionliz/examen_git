@@ -1,6 +1,6 @@
 # examen_git
 poner aqui el nombre de usuario de github.
-1.- DangeSB
+1.-DangeSB 
 2.-
 3.-
 4.-
@@ -12,7 +12,7 @@ poner aqui el nombre de usuario de github.
 10.- Mikosss
 11.- ccreativebboy
 12.-
-13.-
+13.-samirpenahuaman
 14.-
 15.-
 16.-
@@ -33,11 +33,11 @@ poner aqui el nombre de usuario de github.
 31.-
 32.-
 33.-  
-34.-
+34.-Owen Rojas
 35.-
 36.-
 37.-
-38.-
+38.- Sebastian Pereira | Usuario Git: QndresR
 39.-
 40.-
 41.-
