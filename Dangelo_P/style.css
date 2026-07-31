@@ -40,3 +40,12 @@ main {
     margin: 0 auto;
     padding: 20px;
 }
+
+.imagenes { 
+    display: flex; 
+    justify-content:space-between; 
+    align-items: center; 
+}
+.imagenes img { 
+    width: 325px; 
+}

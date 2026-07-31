@@ -1,10 +1,6 @@
 # examen_git
-<<<<<<< HEAD
-SuBest
-=======
-# examen_git
 poner aqui el nombre de usuario de github.
-1.- 
+1.- DangeSB
 2.-
 3.-
 4.-
