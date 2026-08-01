@@ -1,10 +1,7 @@
 # examen_git
-# Liza Molina 
-# ultima fecha de revisión con nota sera este viernes 31 de Julio 
-# 
+# examen_git
 poner aqui el nombre de usuario de github.
-
-1.- Shall0t
+1.- 
 2.-
 3.-
 4.-
@@ -37,11 +34,11 @@ poner aqui el nombre de usuario de github.
 31.-
 32.-
 33.-  
-34.-Owen Rojas
+34.-
 35.-
 36.-
 37.-
-38.- Sebastian Pereira | Usuario Git: QndresR
+38.-
 39.-
 40.-
 41.-
