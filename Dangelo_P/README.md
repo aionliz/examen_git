@@ -1,10 +1,6 @@
 # examen_git
-# Liza Molina 
-# ultima fecha de revisión con nota sera este viernes 31 de Julio 
-# 
 poner aqui el nombre de usuario de github.
-
-1.- Shall0t
+1.-DangeSB 
 2.-
 3.-
 4.-
@@ -48,3 +44,4 @@ poner aqui el nombre de usuario de github.
 42.-
 43.-
 44.-
+>>>>>>> origin/main
