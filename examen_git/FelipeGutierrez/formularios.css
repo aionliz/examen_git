@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.container1{
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(229, 228, 245, 0.925);
+    width:350px;
+    height: 350px;
+    border-radius: 10px;
+    display:flex;
+    align-items: center;
+    
+    flex-direction: column;
+    position: relative;
+    left: 500px;
+    font-size: 20px;
+    box-shadow: 10px 10px 10px rgba(12, 12, 12, 0.5);
+    
+}
