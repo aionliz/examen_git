@@ -1,0 +1,39 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #eef2f7;
+}
+
+form{
+    width: 500px;
+    margin: 30px auto;
+}
+
+fieldset{
+    border: 2px solid #0077cc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+}
+
+legend{
+    font-size: 24px;
+    font-weight: bold;
+    color: #0077cc;
+}
+
+p{
+    margin-bottom: 20px;
+}
+
+button{
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #005fa3;
+}

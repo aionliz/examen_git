@@ -1,2 +1,32 @@
 # examen_git
-poner aqui el nombre de usuario de github.
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>mi_historia</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<header>
+<h1>Mi Historia</h1>
+</header>
+<nav>
+<a href="index.html">Inicio</a>
+<a href="mi_historia.html">Mi historia</a>
+<a href="formulario.html">Formulario</a>
+<a href="mis_suenos.html">Mis sueños</a>
+</nav>
+<main>
+<section>
+<article>
+<!-- Aquí va tu contenido -->
+</article>
+</section>
+</main>
+<footer>
+<p>Creado benjamin gorigoitia
+</body>
+</html>
+
+
