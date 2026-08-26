@@ -43,7 +43,7 @@ poner aqui el nombre de usuario de github.
 36.-
 37.-Camilo Mori | Usuario Github: Kamklo09
 38.- Sebastian Pereira | Usuario Git: QndresR
-39.-
+39.-Vicente Caroca
 40.- Felipe Gutierrez
 41.- 
 42.-
