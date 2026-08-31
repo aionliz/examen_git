@@ -12,7 +12,7 @@ poner aqui el nombre de usuario de github.
 5.-
 6.-
 7.-
-8.-
+8.-Cristian Villalobos/Kris2011x
 9.-
 10.- Mikosss
 11.- ccreativebboy
@@ -27,7 +27,7 @@ poner aqui el nombre de usuario de github.
 20.-
 21.-
 22.-TKS-Grey
-23.-
+23.-gianluca777777
 24.-
 25.-
 26.-
@@ -49,3 +49,4 @@ poner aqui el nombre de usuario de github.
 42.-
 43.-
 44.-Nicolas Guerrero
+44.-

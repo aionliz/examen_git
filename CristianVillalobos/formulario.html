@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <!--Mismo encabezado en cada archivo .html-->
+    <header>
+        <h1>Mi Espacio</h1>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="mi_historia.html">Mi historia</a>
+        <a href="formulario.html">Formulario</a>
+        <a href="mis_suenos.html">Mis suenos</a>
+    </nav>
+    <!-- Contenido principal -->
+    <main>
+        <section>
+            <article>
+                <!-- Formulario de contacto -->
+                <h4>Contacto</h4>
+                <h2>Dejame un mensaje</h2>
+                <p>Si quieres dejarme un mensaje o comentario, puedes hacerlo a traves de este formulario.
+                    Me encantaria recibir tus comentarios y sugerencias.
+                </p>
+                <form action="procesar_formulario.php" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="asunto">Asunto:</label>
+                    <select id="asunto" name="asunto" required>
+                        <option value="">Solo pase a saludar</option>
+                        <option value="comentario">Comentario</option>
+                        <option value="sugerencia">Sugerencia</option>
+                        <option value="pregunta">Pregunta</option>
+                    </select><br><br>
+
+                    <label>Como llegaste a mi sitio:</label><br>
+                    <input type="radio" id="google" name="llegada" value="google">
+                    <label for="google">Por Google</label><br>
+                    <input type="radio" id="amigo" name="llegada" value="amigo">
+                    <label for="amigo">Por un amigo</label><br>
+                    <input type="radio" id="otro" name="llegada" value="otro">
+                    <label for="otro">Otro</label><br><br>
+
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+                    
+                    <input type="submit" value="Enviar">
+                </form>
+            </article>
+        </section>

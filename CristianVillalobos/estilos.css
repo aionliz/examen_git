@@ -1,0 +1,50 @@
+/*cuerpo de la pagina*/
+body{   
+    background-color: #50101d;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+}
+
+/* Contenido */
+div{
+    background-color: #490e1b;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Arial', sans-serif;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* Titulos */
+h4{
+    color: #FBE28A;
+    text-align: start;
+    text-decoration: none;
+}
+
+/* Subtitulos */
+h5{
+    color: #d45d5d;
+    text-align: start;
+    text-decoration: none;
+}
+
+/* Anos (Mi historia) */
+nav{
+    background-color: #700211;
+    color: #fff;
+    padding: 10px;
+    text-align: end;
+    display: flex;
+    justify-content: space-evenly;
+}
+/* Imagen */
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 10px;
+}
