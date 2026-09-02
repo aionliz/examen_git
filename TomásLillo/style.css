@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    background-color:#1b152b;
+}
+
+body{
+    color: #c9b6f8;
+}
+
+h1{
+    color:#f5f0fe;
+}
+
+.top1{
+    display: flex;
+    color: #A8F0C6;
+    text-align: left;
+    padding: 15px 40px;
+    font-size: 10px;
+}
+
+.top2{
+    gap: 20px;
+    display: flex;
+    color: #A8F0C6;
+    justify-content: right;
+    top: 4%;
+    right: 5.5%;
+    position: absolute;
+}
+
+.bottom1{
+    display: flex;
+    color: #6f6485;
+    text-align: left;
+    padding: 15px 40px;
+    font-size: 10px;
+    bottom: -34%;
+    position: absolute;
+}
+
+.bottom2{
+    gap: 20px;
+    display: flex;
+    color: #6f6485;
+    justify-content: right;
+    font-size: 10px;
+    bottom: -33%;
+    right: 5.5%;
+    position: absolute;
+}
+.somethingXd{
+    color: #d3be79;
+    display: flex;
+    text-align: left;
+    top: 1%;
+    position: absolute;
+    font-size: 10px;
+}
+
+header{
+    background: #171225;
+    padding: 15px 40px;
+    border-bottom: 1px solid #3a2f57;
+}
+
+footer{
+    background: #171225;
+    padding: 15px 40px;
+    border-top: 1px solid #3a2f57;
+    color: #6f6485;
+}
+a:link{
+    color: #A8F0C6;
+}
+
+a:visited{
+    color: #A8F0C6;
+}
+
+.contenido{
+    max-width: 20%;
+    text-align: left;
+    justify-content: center;
+    position: absolute;
+    top: 12%;
+    left: 40%;
+}
+        /*De aqui para arriba, son los mismos codigos para todas las paginas */
+.cubiculos{
+    position: absolute;
+    right: 45%;
+    top: 40%;
+    max-width: 20%;
+}
+
+.cubiculo1{
+    padding: 20px 20px;
+    border: solid 1px #372d53;
+    border-radius: 15px;
+
+}
+
+.cubiculo2{
+    padding: 20px 30px;
+    border: solid 1px #372d53;
+    border-radius: 15px;
+    left: 105%;
+    position: absolute;
+    bottom: -23%;
+}
+
+.cubiculo3{
+    padding: 40px 30px;
+    border: solid 1px #372d53;
+    border-radius: 15px;
+    top: 108%;
+    position: absolute;
+}
+        /* De aqui para arriba, son los que utilice para 
+            index, y "deja un mensaje" */
+.intereses{
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    text-align: center;
+}
+        /* Este es para "hacia donde quiero llegar" */

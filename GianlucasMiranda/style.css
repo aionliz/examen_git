@@ -1,0 +1,125 @@
+/* Para quitarle margenes y padding predeterminados */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* Para darle colores, centrar y cambiar la fuente en el cuerpo de la pagina */
+body {
+    background-color: beige;
+    color: #334370;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+/* Para darle un color de fondo y crear el padding para la barra de navegacion de los html */
+nav {
+    background-color: #486d83;
+    padding: 20px;
+}
+/* Para decorar y darle margenes a los enlaces */
+a {
+    margin: 20px;
+    text-decoration: none;
+    padding: 10px 10px;
+    background-color: rgb(224, 239, 245);
+    border-radius: 10px;
+    color: #1f2a49;
+    border: 2px solid #2a5b77;
+}
+/* Para darle color de fondo y padding al main, para que lo de dentro del main, se agrande o se haga pequeño */
+main {
+    background-color: #6893b6;
+    margin: 0px;
+    padding: 20px;
+}
+/* Para decorar y darle caracteristicas a todos los <h1></h1> */
+h1 {
+    background-color: #2a5b77;
+    color: rgb(224, 239, 245);
+    padding: 20px;
+    margin: 0;
+    font-size: 60px;
+}
+/* Para decorar y darle caracteristicas a todos los <h2></h2> */
+h2 {
+    margin: 0px;
+    padding: 20px 0px;
+    font-size: 30px;
+    color: #1f2a49;
+    background-color: rgb(224, 239, 245);
+    border: 2px solid #2a5b77;
+    margin: 0px 550px;
+    border-radius: 10px;
+}
+/* Para darle color, decoracion, posicion y margenes al texto dentro de los articulos (Contenidos) */
+.contento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(224, 239, 245);
+    border: 2px solid #2a5b77;
+    padding: 20px;
+    margin: 20px 600px;
+    border-radius: 20px;
+}
+/* Para darle tamaño y colores a los parrafos */
+p {
+    color: #1f2a49;
+    padding: 12px;
+    width: 170px;
+    margin: 5px;
+    border-radius: 5px;
+}
+/* Le da tamaño y color a todos los <h3></h3> */
+h3 {
+    font-size: 25px;
+    color: #1f2a49;
+}
+/* Para decorar y alinear el pie de los html */
+footer {
+    background-color: #486d83;
+    padding: 5px 20px;
+    display: flex;
+    align-items: start;
+}
+/* Para darle tamaño y margenes a las imagenes de la pagina */
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    margin: 10px 10px;
+}
+/* Para darle tamaño y alineacion solo al id "mensaje" */
+#mensaje {
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    display: flex;
+    justify-content: start;
+}
+/* Para darle tamaño horizontal solo al id "articulom" */
+#articulom {
+    width: 422px;
+}
+/* Para darle alineacion y centrar el form (Formulario de la pagina) */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Darle tamaño y color a los textos de los label */
+label {
+    padding: 5px;
+    color: #1f2a49;
+    font-size: 15px;
+}
+/* Para decorar y y darle colores al boton "Enviar" */
+.enviar {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: rgb(224, 239, 245);
+    color: #1f2a49;
+    margin-bottom: 10px;
+    border: none;
+}

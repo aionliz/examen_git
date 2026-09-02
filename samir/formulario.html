@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="huaman.css">
+</head>
+<body>
+    <!-- Contenedor principal: Actúa como una caja grande invisible que sirve para agrupar y (probablemente mediante CSS) centrar todo en la pantalla -->
+    <div class="contenedor">
+
+        <!-- Tarjeta central: Usa la clase "cubo" para darle forma visual de tarjeta (seguramente con fondo, bordes redondeados y sombras, como en tus otros CSS) -->
+        <main class="cubo">
+            
+            <!-- Título principal visible: Muestra el texto "Formulario de samir" en grande en la parte superior de la tarjeta -->
+            <h1>Formulario de samir</h1>
+
+            <!-- Contenedor del formulario: Agrupa todas las preguntas y cajas de texto. El 'action' y 'method' preparan el área para que, al terminar, los datos se envíen a un servidor -->
+            <form action="/registro" method="post">
+                
+                <!-- Párrafo agrupador: Aquí se usa el <p> para agrupar una pregunta con su caja de respuesta y forzar un salto de línea hacia abajo -->
+                <p>
+                    <!-- Etiqueta de texto: Muestra el texto "Tu nombre completo:" en la pantalla para indicarle al usuario qué debe hacer -->
+                    <label for="nombre_completo">Tu nombre completo:</label>
+                    
+                    <!-- Caja de texto simple: Dibuja un rectángulo donde el usuario puede escribir. El atributo "placeholder" muestra el texto gris fantasma "Ingresa tu nombre" que desaparece al empezar a teclear -->
+                    <input type="text" id="nombre_completo" name="nombre_completo" placeholder="Ingresa tu nombre">
+                </p>
+
+                <p>
+                    <!-- Etiqueta de texto para el correo -->
+                    <label for="correo">Correo electrónico:</label>
+                    
+                    <!-- Caja de correo: Dibuja un rectángulo igual al anterior, pero al ser type="email", si el usuario está en un celular, le abrirá un teclado especial que incluye el símbolo "@" más a mano -->
+                    <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo">
+                </p>
+
+                <p>
+                    <!-- Etiqueta de texto para la edad -->
+                    <label for="edad">Edad:</label>
+                    
+                    <!-- Caja numérica: Dibuja un recuadro que solo acepta números. En computadoras suele agregar unas pequeñas flechas a la derecha de la caja para subir o bajar el número. Impide poner menos de 0 o más de 120 -->
+                    <input type="number" id="edad" name="edad" min="0" max="120" placeholder="Ej. 15">
+                </p>
+
+                <p>
+                    <!-- Etiqueta de texto para el curso escolar -->
+                    <label for="anio">Curso :</label>
+                    
+                    <!-- Caja de texto simple: Rectángulo normal para escribir letras o números -->
+                    <input type="text" id="anio" name="anio" placeholder="Ej. Primero Medio">
+                </p>
+
+                <p>
+                    <!-- Etiqueta de texto indicando la elección del país -->
+                    <label for="pais">País:</label>
+                    
+                    <!-- Menú desplegable: Dibuja una caja que, al hacerle clic, abre una lista flotante hacia abajo con diferentes opciones para elegir -->
+                    <select id="pais" name="pais">
+                        <!-- Opción por defecto: Es el texto que se ve en la caja antes de hacerle clic -->
+                        <option value="">Selecciona tu país</option>
+                        
+                        <!-- Elemento de la lista: Muestra "Chile" dentro del menú desplegable -->
+                        <option value="chile">Chile</option>
+                        
+                        <!-- Elemento de la lista: Muestra "Argentina" -->
+                        <option value="argentina">Argentina</option>
+                        
+                        <!-- Elemento de la lista: Muestra "Perú" -->
+                        <option value="peru">Perú</option>
+                        
+                        <!-- Elemento de la lista: Muestra "Colombia" -->
+                        <option value="colombia">Colombia</option>
+                        
+                        <!-- Elemento de la lista: Muestra "México" -->
+                        <option value="mexico">México</option>
+                    </select>
+                </p>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

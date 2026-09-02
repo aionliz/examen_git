@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MI Formulario</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+
+    <header>
+        <div class="titulo">MI_ESPACIO</div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="mi_historia.html">Mi Historia</a>
+            <a href="formulario.html" class="activo">Formulario</a>
+            <a href="mis_sueños.html">Mis Sueños</a>
+        </nav>
+    </header>
+
+    <div class="caja">
+        <p class="subtitulo">// CONTACTO</p>
+        <h1>Déjame un mensaje</h1>
+        <p class="texto2">
+            Este formulario es solo de práctica: no envía datos a ningún servidor. Sirve para ejercitar etiquetas semánticas de formularios en HTML.
+        </p>
+
+        <form>
+            <div>
+                <label>Nombre</label>
+                <input type="text" placeholder="Tu nombre">
+            </div>
+
+            <div>
+                <label>Correo electrónico</label>
+                <input type="email" placeholder="tucorreo@ejemplo.com">
+            </div>
+
+            <div>
+                <label>Asunto</label>
+                <select>
+                    <option>Solo quiero saludar</option>
+                </select>
+            </div>
+
+            <div>
+                <label>¿Cómo llegaste a este sitio?</label>
+                <div class="opciones-radio">
+                    <label><input type="radio" name="origen"> Redes sociales</label>
+                    <label><input type="radio" name="origen"> Un amigo</label>
+                    <label><input type="radio" name="origen"> Buscador</label>
+                </div>
+            </div>
+
+            <div>
+                <label>Mensaje</label>
+                <textarea rows="4" placeholder="Escribe aquí tu mensaje..."></textarea>
+            </div>
+
+            <button type="submit">ENVIAR</button>
+        </form>
+    </div>
+
+    <footer>
+        <div>© Creado por: Manuel Ibañez</div>
+        <div>hecho con HTML + CSS</div>
+    </footer>
+
+</body>
+</html>

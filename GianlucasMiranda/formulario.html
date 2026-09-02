@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Titulo Principal -->
+    <header>
+        <h1>Formulario</h1>
+    </header>
+    <!-- Barra de navegacion para ir a los html -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="mi_historia.html">Mi historia</a>
+        <a href="formulario.html">Formulario</a>
+        <a href="mis_suenos.html">Mis sueños</a>
+    </nav>
+    <!-- Principal -->
+    <main>
+        <!-- Seccion Principal -->
+        <section>
+            <!-- Subtitulo del html -->
+            <h2>¡Contactame!</h2>
+            <!-- Formulario del html -->
+            <form>
+                <!-- Articulo 1 para poner tu nombre -->
+                <article>
+                    <label>Nombre completo</label>
+                    <input class="enviar" type="text" placeholder="Pon tu nombre completo">
+                </article>
+                <!-- Articulo 2 para poner tu correo -->
+                <article>
+                    <label>Correo electronico</label>
+                    <input class="enviar" type="email" placeholder="juanito@papapa.com">
+                </article>
+                <!-- Articulo 3 para elegir entre motivos, dudas o sugerencias -->
+                <article>
+                    <label>Motivos</label>
+                    <select class="enviar">
+                        <option>Dudas</option>
+                        <option>Sugerencias</option>
+                        <option>Otros</option>
+                    </select>
+                </article>
+                <!-- Articulo 4 para escribir lo que eligiste arriba -->
+                <article id="articulom">
+                    <label>Mensaje</label>
+                    <textarea id="mensaje" type="text" placeholder="Escriba su mensaje aqui"></textarea>
+                </article>
+                <!-- Articulo 5 boton para enviar los datos de arriba -->
+                <article>
+                    <button class="enviar" type="submit">Enviar</button>
+                </article>
+                <!-- Articulo 6 imagen para referenciar que es un formulario -->
+                <article>
+                    <img src="form.png" alt="icono">
+                </article>
+            </form>
+        </section>
+    </main>
+    <!-- Lo ultimo de la pagina, por quien fue creado (por mi) -->
+    <footer>
+        <p>Creado por: Gianlucas Miranda</p>
+    </footer>
+</body>
+</html>

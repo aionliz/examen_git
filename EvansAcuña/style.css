@@ -1,0 +1,149 @@
+/* Paleta de colores utilizados */
+.color1 { color: #0B132B; }
+.color2 { color: #1C2541; }
+.color3 { color: #3A506B; }
+.color4 { color: #5BC0BE; }
+.color5 { color: #6FFFE9; }
+
+/* Fondo */
+body {
+    margin: 0;
+    background-color: #0B132B;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+/* Titulo */
+h1 {
+    background-color: #0B132B;
+    color: #5BC0BE;
+    padding: 20px;
+    margin: 0;
+    font-size: 60px;
+}
+
+/* Navegador superior con links a las otras paginas */
+nav {
+    background-color: #1C2541;
+    margin: 0px;
+    padding: 20px;
+}
+
+/* Links a las otras paginas */
+a {
+    margin: 20px;
+    text-decoration: none;
+    color: #6FFFE9;
+}
+
+/* Ubicacion del comtenido principal */
+main {
+    background: #5BC0BE;
+    margin: 0px;
+    padding: 20px;
+    color: #0B132B;
+}
+
+/* Subtitulo */
+h2 {
+    padding: 20px 0px;
+    font-size: 30px;
+    color: #5BC0BE;
+    background-color: #0B132B;
+    margin: 0px 550px;   /* ← de Style.css */
+    border-radius: 10px;
+}
+
+/* Pie de pagina con creditos */
+footer {
+    background-color: #1C2541;
+    color: #5BC0BE;
+    padding: 5px 20px;
+    display: flex;
+    align-items: start;
+}
+
+/* Secciones y su contenido */
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0B132B;
+    padding: 20px;
+    margin: 20px 600px;
+    border-radius: 20px;
+}
+
+/* Texto situado en las secciones */
+p {
+    background-color: #1C2541;
+    color: #6FFFE9;
+    padding: 12px;
+    width: 300px;
+    margin: 5px;
+    border-radius: 5ch;
+}
+
+/* Titulos para las secciones*/
+h3 {
+    font-size: 25px;
+    color: #5BC0BE;
+}
+
+/* Imagenes de las herramientas utilizadas */
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    margin: 10px 50px;
+}
+
+/* Formulario */
+/* Secciones en el formulario */
+article {
+    display: flex;
+    width: 400px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #0B132B;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/*Texto con la indicacion de completar*/
+label {
+    padding: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #5BC0BE;
+    font-size: 15px;
+}
+
+/* Tamaño del input del mensaje */
+#mensaje {
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    display: flex;
+    justify-content: start;
+    margin: 10px;
+}
+
+/* Seccion completa del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Contenedor princiapl */
+.main_sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Fotos de mi */
+.yo {
+    width: 100px;
+    height: auto;
+}
