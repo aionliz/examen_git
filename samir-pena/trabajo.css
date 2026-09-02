@@ -95,12 +95,12 @@ img {
 
 /* Retrasa 0.5 segundos el inicio de la animación en la segunda tarjeta */
 .cubo:nth-child(2) { 
-    animation-delay: 0.5s;       /* Espera medio segundo antes de flotar para que no se mueva igual que la primera */
+    animation-delay: 0.5s; 
 }
 
 /* Retrasa 1 segundo el inicio de la animación en la tercera tarjeta */
 .cubo:nth-child(3) { 
-    animation-delay: 1s;         /* Espera 1 segundo para crear un efecto de ola o desfase visual entre las 3 tarjetas */
+    animation-delay: 1s; 
 }
 
 /* Reglas de la animación para crear el efecto de flotación */
