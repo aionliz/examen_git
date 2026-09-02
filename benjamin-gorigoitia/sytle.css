@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #e2e8f0;
+    line-height: 1.6;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #f8fafc;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #38bdf8;
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+
+body > a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 4px 6px;
+    transition: color 0.2s ease;
+}
+
+body > a:hover {
+    color: #7dd3fc;
+    text-decoration: underline;
+}
+
+h2, h3, h5 {
+    color: #38bdf8;
+    margin-top: 40px;
+    margin-bottom: 12px;
+    max-width: 700px;
+    width: 100%;
+    border-bottom: 1px solid #334155;
+    padding-bottom: 6px;
+}
+
+h5 {
+    color: #f8fafc;
+    border-bottom: none;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+p {
+    max-width: 700px;
+    width: 100%;
+    color: #cbd5e1;
+    margin-bottom: 10px;
+}
+
+ul {
+    max-width: 700px;
+    width: 100%;
+    list-style: none;
+}
+
+ul li {
+    background: #1e293b;
+    border-left: 3px solid #94a4aa;
+    padding: 10px 16px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    transition: transform 0.2s ease,  0.2s ease;
+}
+
+ul li:hover {
+    transform: translateX(6px);
+    background: #929aa5;
+}
+
+nav {
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+label {
+    font-weight: 600;
+    color: #f8fafc;
+    margin-bottom: 6px;
+}
+
+input,
+textarea {
+    background: #bcbec0;
+    border: 1px solid #595e66;
+    border-radius: 6px;
+    padding: 10px 12px;
+    color: #e2e8f0;
+    font-family: inherit;
+    max-width: 700px;
+    width: 100%;
+    margin-bottom: 16px;
+    transition: border-color 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #b1b8bb;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background: #38bdf8;
+    color: #656e83;
+    border: none;
+    padding: 12px 28px;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+    max-width: 200px;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #7dd3fc;
+    transform: translateY(-2px);
+}

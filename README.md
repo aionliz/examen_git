@@ -1,28 +1,24 @@
 # examen_git
-# examen_git
-# Liza Molina 
-# ultima fecha de revisión con nota sera este viernes 31 de Julio 
-# 
-poner aqui el nombre de usuario de github.
 
-1.- Shall0t
+poner aqui el nombre de usuario de github.
+1.- 
 2.-
 3.-
 4.-
 5.-
 6.-
 7.-
-8.-Cristian Villalobos/Kris2011x
+8.- Cristian Villalobos/Kris2011x
 9.-
 10.- Mikosss
 11.- ccreativebboy
 12.-
-13.-samirpenahuaman
+13.- Samirpenahuaman
 14.-
 15.-
 16.-
 17.-
-18.-
+18.- gianella65
 19.-
 20.-
 21.-
@@ -38,15 +34,17 @@ poner aqui el nombre de usuario de github.
 31.-
 32.-
 33.-  
-34.-Owen Rojas
+34.-
 35.-
 36.-
-37.-Camilo Mori | Usuario Github: Kamklo09
+37.- Camilo Mori | Usuario Github: Kamklo09
 38.- Sebastian Pereira | Usuario Git: QndresR
-39.-Vicente Caroca
+39.- Vicente Caroca
 40.- Felipe Gutierrez
 41.- 
 42.-
 43.-
-44.-Nicolas Guerrero
-44.-
+44.- Nicolas Guerrero
+
+
+
