@@ -1,88 +1,96 @@
+/* Estilos globales para la estructura base de la página (<body>) */
 body {
-    background-color: aquamarine;
-    margin: 0;
-    font-family: sans-serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    background-color: aquamarine; /* Pinta todo el fondo de la pantalla de color aguamarina */
+    margin: 0;                   /* Elimina los bordes o espacios blancos por defecto del navegador */
+    font-family: sans-serif;     /* Cambia la tipografía de todo el sitio a una letra limpia sin serifas */
+    min-height: 100vh;           /* Obliga a la página a ocupar al menos el 100% del alto de la ventana */
+    display: flex;               /* Activa el diseño flexible para ordenar la barra de navegación, el contenido y el pie de página */
+    flex-direction: column;      /* Apila la navegación <nav>, los cubos .contenedor y el pie .footer-form uno debajo del otro */
 }
 
+/* Estilos para la barra de navegación superior (<nav>) */
 nav {
-    background-color: #222;
-    padding: 15px 0;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    background-color: #222;       /* Le da un fondo gris muy oscuro/casi negro a la barra de menú */
+    padding: 15px 0;             /* Añade espacio de relleno arriba y abajo de los botones de enlace */
+    text-align: center;          /* Centra horizontalmente los enlaces dentro del menú */
+    position: sticky;            /* Hace que el menú se quede pegado arriba cuando bajas por la página */
+    top: 0;                      /* Indica que debe fijarse exactamente en el borde superior de la pantalla */
+    z-index: 100;                /* Asegura que el menú pase por encima de las fotos y tarjetas sin ocultarse */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* Crea una sombra suave debajo del menú para separarlo del resto de la página */
 }
 
+/* Estilos para los botones/enlaces del menú (<nav><a href="...">) */
 nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-    font-size: 16px;
-    text-transform: uppercase;
-   
+    color: #fff;                 /* Pinta el texto de los botones del menú en color blanco */
+    text-decoration: none;       /* Quita el subrayado azul predeterminado que traen los enlaces */
+    margin: 0 15px;              /* Da una separación lateral de 15px entre cada enlace para que no se peguen */
+    font-weight: bold;           /* Aplica negrita para que los nombres de las páginas destaquen */
+    font-size: 16px;             /* Establece un tamaño de letra adecuado para hacer clic con facilidad */
+    text-transform: uppercase;   /* Convierte todo el texto del menú a MAYÚSCULAS automáticamente */
 }
 
+/* Efecto cuando pasas el cursor sobre los enlaces del menú (nav a:hover) */
 nav a:hover {
-    color: #4da6ff;
+    color: #4da6ff;              /* Cambia el color del texto a azul claro cuando el usuario pasa el mouse por encima */
 }
 
+/* Estilos para el contenedor central de las tarjetas (<div class="contenedor">) */
 .contenedor {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-    padding: 60px 20px;
-    flex-grow: 1;
+    display: flex;               /* Pone las dos tarjetas ("Mi Historia" y "Actualidad") una al lado de la otra */
+    flex-wrap: wrap;             /* Si se abre en un celular, la segunda tarjeta baja automáticamente debajo de la primera */
+    justify-content: center;     /* Centra las dos tarjetas en la pantalla */
+    gap: 40px;                   /* Crea una separación amplia de 40px entre ambas tarjetas */
+    padding: 60px 20px;          /* Añade relleno superior/inferior (60px) y lateral (20px) alrededor del área principal */
+    flex-grow: 1;                /* Estira el área central para que empuje el pie de página siempre al fondo */
 }
 
+/* Estilos para las tarjetas de contenido (<div class="cubo">) */
 .cubo {
-    background-color: #007bff; 
-    color: white;
-    width: 300px;
-    padding: 30px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    animation: flotar 3s ease-in-out infinite; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: #007bff;   /* Pinta el fondo de ambas tarjetas con un azul brillante */
+    color: white;                /* Hace que todo el texto dentro de la tarjeta sea de color blanco */
+    width: 300px;                /* Fija un ancho de 300px para que los dos cubos tengan exactamente el mismo tamaño */
+    padding: 30px;               /* Añade espacio interno entre los bordes de la tarjeta y su contenido */
+    border-radius: 12px;         /* Redondea las esquinas del rectángulo */
+    text-align: center;          /* Centra los elementos internos como los títulos y la imagen */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Agrega una sombra oscura por debajo para darle profundidad */
+    animation: flotar 3s ease-in-out infinite; /* Aplica la animación continua para que la tarjeta suba y baje */
+    display: flex;               /* Aplica flexbox dentro de la tarjeta */
+    flex-direction: column;      /* Organiza el título, la foto y la lista de arriba a abajo */
+    align-items: center;         /* Centra la imagen y el título horizontalmente dentro del cubo */
 }
 
-
-
+/* Ajustes para la lista de viñetas dentro del cubo (.cubo ul) */
 .cubo ul {
-    text-align: left;
-    padding-left: 20px;
-    margin-top: 15px;
+    text-align: left;            /* Alinea el texto de los puntos a la izquierda dentro del cubo para facilitar la lectura */
+    padding-left: 20px;          /* Deja sangría suficiente para que los puntos o viñetas no queden fuera */
+    margin-top: 15px;            /* Da un espacio de separación entre la imagen circular y el primer punto de la lista */
 }
 
+/* Ajustes para cada punto individual de la lista (.cubo li) */
 .cubo li {
-    margin-bottom: 10px;
-    line-height: 1.4;
+    margin-bottom: 10px;          /* Separa cada frase o evento de la historia con 10px hacia abajo */
+    line-height: 1.4;            /* Añade espacio entre renglones si una frase ocupa más de una línea */
 }
 
+/* Estilos para las fotos personales dentro de los cubos (<img src="...">) */
 img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid white;
+    width: 100px;                /* Define un ancho fijo de 100px */
+    height: 100px;               /* Define un alto fijo de 100px */
+    border-radius: 50%;          /* Convierte la foto cuadrada en un círculo perfecto */
+    object-fit: cover;           /* Evita que las fotos ("peñe.jpg" y "samir.jpg") se deformen o estiren */
+    border: 3px solid white;     /* Le añade un marco o borde blanco de 3px alrededor de la foto circular */
 }
 
+/* Estilos aplicados a los textos de párrafos generales (<p>) */
 p {
-    color: rgb(63, 20, 180);
-    font-weight: bold;
-    font-size: 18px;
+    color: rgb(63, 20, 180);     /* Le da un color morado/azul oscuro al texto */
+    font-weight: bold;           /* Aplica negrita al texto */
+    font-size: 18px;             /* Establece un tamaño destacado */
 }
 
+/* Estilos para el bloque inferior (<div class="footer-form">) */
 .footer-form {
-    text-align: center;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;          /* Centra el texto de autoría en medio de la pantalla */
+    padding: 20px;               /* Añade espacio de relleno interno alrededor del texto */
+    background-color: rgba(255, 255, 255, 0.5); /* Crea un fondo blanco semitransparente para resaltar la firma */
 }

@@ -1,68 +1,74 @@
+/* Estilos generales para el fondo y centrado de la pantalla (<body>) */
 body {
-    background-color: aquamarine;
-    margin: 0;
-    font-family: sans-serif;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: aquamarine; /* Pinta todo el fondo de la pantalla con color aguamarina */
+    margin: 0;                   /* Quita los bordes blancos por defecto del navegador */
+    font-family: sans-serif;     /* Cambia la tipografía a una letra limpia sin serifas */
+    min-height: 100vh;           /* Fuerza a que el fondo ocupe al menos el 100% del alto de la pantalla */
+    display: flex;               /* Activa flexbox para controlar la posición del contenido */
+    justify-content: center;     /* Centra el contenedor horizontalmente en el medio de la pantalla */
+    align-items: center;         /* Centra el contenedor verticalmente en el medio de la pantalla */
 }
 
+/* Estilos para la caja contenedora externa (<div class="contenedor">) */
 .contenedor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 20px;
+    display: flex;               /* Activa flexbox dentro del contenedor */
+    justify-content: center;     /* Centra el cubo/tarjeta dentro del contenedor */
+    align-items: center;         /* Centra verticalmente la tarjeta */
+    width: 100%;                 /* Ocupa el 100% del ancho disponible */
+    padding: 20px;               /* Añade un espacio de seguridad para que el formulario no toque los bordes en pantallas pequeñas */
 }
 
+/* Estilos para la tarjeta central que rodea el formulario (<main class="cubo">) */
 .cubo {
-    background-color: #007bff; 
-    color: white;
-    width: 100%;
-    max-width: 400px;
-    padding: 30px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-
+    background-color: #007bff;   /* Pinta el fondo de la tarjeta con un azul brillante */
+    color: white;                /* Pinta las letras dentro de la tarjeta de color blanco */
+    width: 100%;                 /* Se adapta al ancho del celular o pantalla */
+    max-width: 400px;            /* Limita el ancho máximo a 400px para que no se extienda demasiado en computadoras */
+    padding: 30px;               /* Da un relleno interno amplio entre los bordes de la tarjeta y las preguntas */
+    border-radius: 12px;         /* Redondea las esquinas del rectángulo del formulario */
+    text-align: center;          /* Centra los elementos iniciales como el título principales */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Añade una sombra oscura por debajo para darle profundidad a la tarjeta */
 }
 
-
-
+/* Estilos para el título principal del formulario (<h1>Formulario de samir</h1>) */
 h1 {
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-size: 24px;
+    margin-top: 0;               /* Elimina el espacio sobrante por encima del título */
+    margin-bottom: 20px;         /* Da un espacio de 20px abajo para separarlo de la primera pregunta */
+    font-size: 24px;             /* Define el tamaño del título de la tarjeta */
 }
 
+/* Estilos para la estructura del formulario (<form>) */
 form {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
+    display: flex;               /* Aplica alineación flexible a las preguntas */
+    flex-direction: column;      /* Apila las preguntas y campos de entrada verticalmente (uno debajo del otro) */
+    text-align: left;            /* Alinea los textos de las preguntas a la izquierda dentro del azul */
 }
 
+/* Estilos para cada bloque de pregunta (<p>) */
 p {
-    margin: 10px 0;
-    display: flex;
-    flex-direction: column;
+    margin: 10px 0;              /* Crea una separación de 10px arriba y abajo entre cada campo del formulario */
+    display: flex;               /* Aplica alineación flexible dentro del bloque <p> */
+    flex-direction: column;      /* Coloca el texto de la pregunta (label) justo encima de la casilla de texto (input) */
 }
 
+/* Estilos para los textos de cada campo (<label>) */
 label {
-    font-weight: bold;
-    margin-bottom: 8px;
-    font-size: 14px;
+    font-weight: bold;           /* Pone el texto de la pregunta (ej. "Tu nombre completo:") en negrita */
+    margin-bottom: 8px;          /* Separa el texto de la casilla de entrada hacia abajo por 8px */
+    font-size: 14px;             /* Define el tamaño de letra de las preguntas */
 }
 
+/* Estilos para las casillas de entrada y menú desplegable (<input> y <select>) */
 input, select {
-    padding: 10px;
-    border: none;
-    border-radius: 6px;
-    font-size: 15px;
-    outline: none;
-    font-family: sans-serif;
+    padding: 10px;               /* Añade espacio de relleno interno dentro de las casillas para que no se sienta apretado el texto */
+    border: none;                /* Quita el borde negro por defecto que traen las casillas */
+    border-radius: 6px;          /* Redondea las esquinas de los recuadros blancos de texto */
+    font-size: 15px;             /* Define el tamaño de la letra que escribe el usuario */
+    outline: none;               /* Elimina el borde azul o negro por defecto del navegador al hacer clic en la casilla */
+    font-family: sans-serif;     /* Mantiene la misma letra dentro de las casillas */
 }
 
+/* Efecto cuando el usuario hace clic o está escribiendo en una casilla (input:focus, select:focus) */
 input:focus, select:focus {
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8); /* Agrega un resplandor o brillo blanco alrededor de la casilla activa */
 }

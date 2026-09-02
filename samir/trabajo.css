@@ -1,106 +1,122 @@
+/* Estilos estructurales para todo el sitio (<body>) */
 body {
-    background-color: aquamarine;
-    margin: 0;
-    font-family: sans-serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: aquamarine; /* Pinta todo el fondo de la pantalla de color aguamarina */
+    margin: 0;                   /* Quita los bordes blancos por defecto del navegador */
+    font-family: sans-serif;     /* Aplica una tipografía limpia y sin serifas en toda la página */
+    min-height: 100vh;           /* Fuerza a que el cuerpo de la página ocupe mínimo el 100% de la pantalla */
+    display: flex;               /* Activa el modelo flexible para organizar header, contenedor y footer */
+    flex-direction: column;      /* Alinea los bloques principales de arriba a abajo */
+    align-items: center;         /* Centra horizontalmente todo el contenido en medio de la pantalla */
 }
 
+/* Estilos para el bloque del encabezado superior (<header class="header-principal">) */
 .header-principal {
-    text-align: center;
-    padding: 30px 20px;
+    text-align: center;          /* Centra el texto del título y la imagen del logo */
+    padding: 30px 20px;          /* Añade un relleno de 30px arriba/abajo y 20px a los lados */
 }
 
+/* Estilos específicos para el título dentro del encabezado (.header-principal h2) */
 .header-principal h2 {
-    color: rgb(63, 20, 180);
-    text-transform: uppercase;
-    font-size: 24px;
-    margin-bottom: 15px;
+    color: rgb(63, 20, 180);     /* Le da un color morado/azul oscuro al texto "El comienzo de los Cybertilines" */
+    text-transform: uppercase;   /* Pone el texto del título en MAYÚSCULAS */
+    font-size: 24px;             /* Ajusta el tamaño de la letra para llamar la atención */
+    margin-bottom: 15px;         /* Separa el título de la imagen del logo por 15px hacia abajo */
 }
 
+/* Estilos para el logo de la institución (<img src="siplogo.png">) */
 img {
-    height: 400px;
-    width: 400px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid white;
+    height: 400px;               /* Establece un alto fijo de 400px para la imagen */
+    width: 400px;                /* Establece un ancho fijo de 400px */
+    border-radius: 50%;          /* Transforma la imagen cuadrada en un círculo perfecto */
+    object-fit: cover;           /* Evita que el logo de la SIP se deforme o estire al recortarlo en círculo */
+    border: 3px solid white;     /* Añade un marco o borde blanco de 3px alrededor del circulo */
 }
 
+/* Estilos para el contenedor de las 3 tarjetas (<main class="contenedor">) */
 .contenedor {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-    padding: 20px;
-    max-width: 1200px;
-    flex-grow: 1;
+    display: flex;               /* Coloca las tres tarjetas una al lado de la otra */
+    flex-wrap: wrap;             /* Hace que las tarjetas bajen a otra fila en pantallas pequeñas o celulares */
+    justify-content: center;     /* Centra las tarjetas horizontalmente */
+    gap: 40px;                   /* Crea una separación de 40px entre cada tarjeta */
+    padding: 20px;               /* Añade un espacio de seguridad interno */
+    max-width: 1200px;            /* Limita el ancho máximo del contenedor en monitores grandes */
+    flex-grow: 1;                /* Empuja el footer hacia la parte inferior de la pantalla */
 }
 
+/* Estilos base para cada una de las tarjetas (<div class="cubo">) */
 .cubo {
-    background-color: #007bff; 
-    color: white;
-    width: 320px;
-    padding: 30px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    animation: flotar 3s ease-in-out infinite; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    background-color: #007bff;   /* Pinta el fondo de todas las tarjetas de color azul */
+    color: white;                /* Define el texto interno en color blanco para que resalte */
+    width: 320px;                /* Fija un ancho de 320px para que las tres tarjetas midan exactamente lo mismo */
+    padding: 30px;               /* Da espacio interno entre los bordes de la tarjeta y los textos o listas */
+    border-radius: 12px;         /* Redondea las cuatro esquinas de los rectángulos */
+    text-align: center;          /* Centra los títulos e instrucciones iniciales */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Agrega una sombra por debajo para dar efecto de elevación */
+    animation: flotar 3s ease-in-out infinite; /* Activa la animación para que las tarjetas suban y bajen suavemente */
+    display: flex;               /* Activa flexbox dentro del cubo */
+    flex-direction: column;      /* Apila los textos y listas de forma vertical dentro de la tarjeta */
+    justify-content: center;     /* Centra verticalmente el contenido interno */
 }
 
+/* Retraso de animación para la segunda tarjeta (Integrantes) */
 .cubo:nth-child(2) { 
-    animation-delay: 0.5s; 
+    animation-delay: 0.5s;       /* Espera medio segundo antes de flotar para que no se mueva igual que la primera */
 }
 
+/* Retraso de animación para la tercera tarjeta (Roles del equipo) */
 .cubo:nth-child(3) { 
-    animation-delay: 1s; 
+    animation-delay: 1s;         /* Espera 1 segundo para crear un efecto de ola o desfase visual entre las 3 tarjetas */
 }
 
+/* Definición de la animación "flotar" que mueve las tarjetas hacia arriba y abajo */
 @keyframes flotar {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-15px); }
-    100% { transform: translateY(0px); }
+    0% { transform: translateY(0px); }     /* Posición inicial */
+    50% { transform: translateY(-15px); } /* Eleva la tarjeta 15px */
+    100% { transform: translateY(0px); }   /* Regresa a la posición inicial */
 }
 
+/* Estilos para el título interno de la primera tarjeta (<h1>¿Qué hace cada quien?</h1>) */
 h1 {
-    font-size: 20px;
-    margin-top: 0;
+    font-size: 20px;             /* Ajusta el tamaño de la letra del título dentro de la primera tarjeta */
+    margin-top: 0;               /* Quita el espacio extra arriba del título */
 }
 
+/* Estilos para los subtítulos dentro de las tarjetas (<h2>) */
 h2 {
-    font-size: 18px;
-    margin-top: 0;
+    font-size: 18px;             /* Tamaño ligeramente más pequeño para títulos secundarios dentro del cubo */
+    margin-top: 0;               /* Quita espacios sobrantes arriba */
 }
 
+/* Estilos para las listas dentro de las tarjetas (.cubo ul) */
 .cubo ul {
-    text-align: left;
-    padding-left: 20px;
-    margin-top: 15px;
+    text-align: left;            /* Alinea los nombres y roles a la izquierda para leerlos con facilidad */
+    padding-left: 20px;          /* Añade espacio a la izquierda para no tapar los puntos de la lista */
+    margin-top: 15px;            /* Separa la lista del texto que tiene arriba por 15px */
 }
 
+/* Estilos para cada punto de las listas de integrantes y roles (.cubo li) */
 .cubo li {
-    margin-bottom: 8px;
-    font-size: 14px;
-    line-height: 1.4;
+    margin-bottom: 8px;          /* Separa cada nombre o cargo del siguiente hacia abajo */
+    font-size: 14px;             /* Tamaño de letra para la lista de integrantes */
+    line-height: 1.4;            /* Añade espacio entre líneas para que las descripciones no se amontonen */
 }
 
+/* Estilos generales para párrafos de texto (<p>) */
 p {
-    font-size: 15px;
-    line-height: 1.4;
+    font-size: 15px;             /* Establece el tamaño de letra general */
+    line-height: 1.4;            /* Espaciado entre líneas para una lectura cómoda */
 }
 
+/* Estilos para el contenedor del pie de página (<footer class="footer-form">) */
 .footer-form {
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
+    text-align: center;          /* Centra el texto del mensaje final al pie de la pantalla */
+    padding: 20px;               /* Añade espacio alrededor del footer */
+    margin-top: 20px;            /* Separa el pie de página de las tarjetas principales */
 }
 
+/* Estilos específicos para el texto dentro del footer (.footer-form p) */
 .footer-form p {
-    color: rgb(63, 20, 180);
-    font-weight: bold;
-    font-size: 18px;
+    color: rgb(63, 20, 180);     /* Le da el tono morado/azul característico del sitio al texto "Avanzaremos" */
+    font-weight: bold;           /* Aplica negrita para resaltar la frase de cierre */
+    font-size: 18px;             /* Establece un tamaño más grande que los párrafos normales */
 }

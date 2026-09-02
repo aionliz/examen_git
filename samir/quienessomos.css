@@ -1,87 +1,98 @@
+/* Estilos para todo el cuerpo de la página (<body>) */
 body {
-    background-color: aquamarine;
-    margin: 0;
-    font-family: sans-serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background-color: aquamarine; /* Pinta todo el fondo de la pantalla de color aguamarina */
+    margin: 0;                   /* Elimina los bordes blancos por defecto del navegador */
+    font-family: sans-serif;     /* Cambia la letra de todo el sitio a una más limpia sin serifas */
+    min-height: 100vh;           /* Hace que la página ocupe al menos el 100% del alto de la pantalla */
+    display: flex;               /* Activa la alineación flexible para ordenar el contenido */
+    flex-direction: column;      /* Coloca el header, main y footer uno debajo del otro */
+    align-items: center;         /* Centra todo el contenido horizontalmente en la pantalla */
+    justify-content: center;     /* Centra el contenido verticalmente en la pantalla */
 }
 
+/* Estilos para el encabezado (<header>) */
 header {
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: center;          /* Centra el texto del encabezado */
+    margin-bottom: 20px;         /* Separa el encabezado del contenido principal (<main>) hacia abajo */
 }
 
+/* Estilos para el título principal (<h1>Quiénes Somos</h1>) */
 h1 {
-    color: rgb(63, 20, 180);
-    font-size: 32px;
-    text-transform: uppercase;
+    color: rgb(63, 20, 180);     /* Le da un color morado/azul oscuro al título principal */
+    font-size: 32px;             /* Define un tamaño de letra grande para llamar la atención */
+    text-transform: uppercase;   /* Convierte todo el texto "Quiénes Somos" a MAYÚSCULAS */
 }
 
+/* Estilos para el contenedor principal (<main>) */
 main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    width: 100%;
-    max-width: 900px;
-    padding: 20px;
+    display: flex;               /* Aplica diseño flexible para acomodar las dos secciones en tarjetas */
+    flex-wrap: wrap;             /* Permite que las tarjetas bajen si la pantalla es de un celular */
+    justify-content: center;     /* Centra las dos secciones horizontalmente */
+    gap: 30px;                   /* Crea un espacio de 30px entre la caja "Este año" y "Cibertilines" */
+    width: 100%;                 /* Ocupe el ancho disponible */
+    max-width: 900px;            /* Limita el ancho máximo para que no se estire demasiado en pantallas gigantes */
+    padding: 20px;               /* Añade un espacio de relleno interno alrededor del contenido */
 }
 
+/* Estilos compartidos para las tarjetas (<div class="samir123"> y <div class="peña123">) */
 .samir123, .peña123 {
-    background-color: #007bff;
-    color: white;
-    width: 300px;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    animation: flotar 3s ease-in-out infinite;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    background-color: #007bff;   /* Pinta el fondo de ambas tarjetas de color azul */
+    color: white;                /* Cambia el texto dentro de las tarjetas a blanco para que resalte */
+    width: 300px;                /* Define un ancho fijo de 300px para que ambas tarjetas midan lo mismo */
+    padding: 30px;               /* Da espacio interno entre los bordes de la tarjeta y el texto */
+    border-radius: 12px;         /* Redondea las esquinas de las tarjetas */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Crea una sombra oscura debajo para dar efecto de flotación */
+    animation: flotar 3s ease-in-out infinite; /* Activa una animación continua para que la tarjeta suba y baje */
+    display: flex;               /* Permite ordenar el contenido interno de la tarjeta */
+    flex-direction: column;      /* Alinea los títulos y párrafos internos verticalmente */
+    justify-content: center;     /* Centra el contenido interno dentro de la tarjeta */
 }
 
+/* Regla especial para la tarjeta de metas (<div class="peña123">) */
 .peña123 {
-    animation-delay: 0.5s;
+    animation-delay: 0.5s;       /* Retrasa medio segundo su animación para que no flote al mismo tiempo que la otra */
 }
 
-
-
+/* Estilos para los subtítulos secundarios (<h2>) */
 h2 {
-    font-size: 20px;
-    margin-top: 0;
-    text-align: center;
+    font-size: 20px;             /* Define el tamaño para los títulos "Este año" y "Cibertilines" */
+    margin-top: 0;               /* Quita el espacio extra que el navegador añade arriba del título */
+    text-align: center;          /* Centra los subtítulos dentro de sus áreas */
 }
 
+/* Estilos para los subtítulos de tercer nivel (<h3>Nuestras metas:</h3>) */
 h3 {
-    font-size: 18px;
-    margin-top: 0;
-    text-align: center;
+    font-size: 18px;             /* Tamaño ligeramente más pequeño que el h2 */
+    margin-top: 0;               /* Elimina el espacio superior */
+    text-align: center;          /* Centra el texto dentro de la tarjeta */
 }
 
+/* Estilos para los párrafos (<p>) y elementos de la lista (<li>) */
 p, li {
-    font-size: 15px;
-    line-height: 1.5;
+    font-size: 15px;             /* Define un tamaño de letra cómodo para la lectura */
+    line-height: 1.5;            /* Aumenta el espacio entre líneas de texto para que sea fácil de leer */
 }
 
+/* Estilos para la lista no ordenada (<ul>) */
 ul {
-    padding-left: 20px;
-    margin: 0;
+    padding-left: 20px;          /* Añade sangría a la izquierda para acomodar las viñetas/puntos */
+    margin: 0;                   /* Quita los márgenes por defecto de la lista */
 }
 
+/* Estilos para cada punto individual de la lista (<li>) */
 li {
-    margin-bottom: 8px;
+    margin-bottom: 8px;          /* Añade una separación hacia abajo entre cada meta */
 }
 
+/* Estilos para el pie de página (<footer>) */
 footer {
-    text-align: center;
-    margin-top: 20px;
+    text-align: center;          /* Centra el contenido del pie de página */
+    margin-top: 20px;            /* Separa el pie de página del contenido de las tarjetas */
 }
 
+/* Estilos específicos para el texto dentro del footer (<footer><p>) */
 footer p {
-    color: rgb(63, 20, 180);
-    font-weight: bold;
-    font-size: 16px;
+    color: rgb(63, 20, 180);     /* Le da el mismo tono morado/azul que tiene el título principal (<h1>) */
+    font-weight: bold;           /* Aplica texto en negrita al texto "Próximamente 2026-2027" */
+    font-size: 16px;             /* Tamaño de letra para el texto final */
 }

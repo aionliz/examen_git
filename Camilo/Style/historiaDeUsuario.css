@@ -1,8 +1,8 @@
+/* Reinicio general de la página */
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-
 }
 
 body{
@@ -11,6 +11,7 @@ body{
     color: #334155;
 }
 
+/* Estilos globales de título */
 header{
     background: linear-gradient(#0F172A, #1E3A8A);
     color: white;
@@ -41,11 +42,13 @@ nav a:hover{
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
 }
 
+/* Contenedor central a 850px */
 main{
     width:850px;
     margin:40px auto;
 }
 
+/* Estilo base de las secciones o cajas */
 section{
     background: white;
     padding: 30px;
@@ -55,6 +58,7 @@ section{
     border-left: 6px solid #1E3A8A;
 }
 
+/* Animación de zoom */
 .caja {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -64,6 +68,7 @@ section{
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
 }
 
+/* Títulos de sección */
 section h2 {
     color: #1E3A8A;
     margin-bottom: 15px;

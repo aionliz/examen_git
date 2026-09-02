@@ -1,91 +1,104 @@
+/* Estilos aplicados al fondo general y al orden de la pantalla (<body>) */
 body {
-    background-color: aquamarine;
-    margin: 0;
-    font-family: sans-serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: aquamarine; /* Pinta todo el fondo de la pantalla de color aguamarina */
+    margin: 0;                   /* Elimina los espacios blancos de los bordes del navegador */
+    font-family: sans-serif;     /* Cambia la tipografía de todo el sitio a una letra moderna y limpia */
+    min-height: 100vh;           /* Fuerza a que la página mida al menos el 100% del alto de la pantalla */
+    display: flex;               /* Activa la estructura flexible para alinear los bloques */
+    flex-direction: column;      /* Apila el header, el contenedor principal y el footer uno debajo del otro */
+    align-items: center;         /* Centra horizontalmente todo el contenido en el medio de la pantalla */
 }
 
+/* Estilos para la franja superior del encabezado (<header>) */
 header {
-    text-align: center;
-    padding: 30px 20px;
+    text-align: center;          /* Centra el texto del título dentro del encabezado */
+    padding: 30px 20px;          /* Le da espacio interno (arriba/abajo y a los lados) para que no quede pegado al borde */
 }
 
+/* Estilos para el título principal (<h1>Sueños a cumplir</h1>) */
 h1 {
-    color: rgb(63, 20, 180);
-    text-transform: uppercase;
-    font-size: 28px;
-    margin: 0;
+    color: rgb(63, 20, 180);     /* Le da un tono morado/azul intenso al texto */
+    text-transform: uppercase;   /* Convierte todo el texto a MAYÚSCULAS automáticamente */
+    font-size: 28px;             /* Establece un tamaño destacado para el título visual */
+    margin: 0;                   /* Quita los espacios o márgenes extras alrededor del título */
 }
 
+/* Estilos para la caja contenedora de los dos cubos (<main class="contenedor">) */
 .contenedor {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-    padding: 20px;
-    max-width: 1200px;
-    flex-grow: 1;
+    display: flex;               /* Permite colocar las tarjetas una al lado de la otra */
+    flex-wrap: wrap;             /* Si la pantalla es pequeña (como un celular), la segunda tarjeta baja automáticamente */
+    justify-content: center;     /* Centra las tarjetas horizontalmente */
+    gap: 40px;                   /* Crea una separación de 40px entre el cubo "samir123" y el cubo "peña123" */
+    padding: 20px;               /* Añade un margen interno alrededor de todo el bloque principal */
+    max-width: 1200px;            /* Evita que el contenido se abra demasiado en monitores muy grandes */
+    flex-grow: 1;                /* Le dice al contenedor que ocupe todo el espacio vertical disponible para empujar el footer al final */
 }
 
+/* Estilos de diseño base para ambos cubos de contenido (<div class="cubo">) */
 .cubo {
-    color: white;
-    width: 320px;
-    padding: 30px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    animation: flotar 3s ease-in-out infinite; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    color: white;                /* Pinta las letras internas del cubo de color blanco para mejorar la lectura */
+    width: 320px;                /* Fija el ancho de cada tarjeta a 320px para que ambas midan exactamente lo mismo */
+    padding: 30px;               /* Genera un espacio de relleno amplio entre los bordes de la tarjeta y el texto interno */
+    border-radius: 12px;         /* Redondea las cuatro esquinas de la tarjeta */
+    text-align: center;          /* Centra los textos internos de la tarjeta */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Crea una sombra oscura suave por debajo de la tarjeta */
+    animation: flotar 3s ease-in-out infinite; /* Aplica el movimiento continuo de subida y bajada */
+    display: flex;               /* Activa flexbox interno para organizar los contenidos de la tarjeta */
+    flex-direction: column;      /* Organiza los elementos internos verticalmente */
+    justify-content: center;     /* Centra verticalmente el contenido dentro de la tarjeta */
 }
 
+/* Estilos específicos para la tarjeta de "Este año" (<div class="cubo samir123">) */
 .samir123 {
-    background-color: aquamarine;
+    background-color: aquamarine; /* Pinta el fondo de esta tarjeta del mismo color aguamarina que el fondo */
 }
 
+/* Estilos específicos para la tarjeta de "Sueños a futuro" (<div class="cubo peña123">) */
 .peña123 {
-    background-color: aqua;
-    animation-delay: 0.5s;
+    background-color: aqua;       /* Pinta esta tarjeta con un tono de agua más brillante para diferenciarla */
+    animation-delay: 0.5s;       /* Espera medio segundo antes de empezar a flotar para que no se mueva idéntica a la primera */
 }
 
+/* Definición del movimiento de la animación llamada "flotar" */
 @keyframes flotar {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-15px); }
-    100% { transform: translateY(0px); }
+    0% { transform: translateY(0px); }     /* Posición inicial normal */
+    50% { transform: translateY(-15px); } /* Sube la tarjeta 15 píxeles en el aire */
+    100% { transform: translateY(0px); }   /* Regresa a la posición inicial (crea el efecto de balanceo continuo) */
 }
 
+/* Estilos para los títulos dentro de los cubos (<h2>) */
 h2 {
-    font-size: 20px;
-    margin-top: 0;
-    margin-bottom: 15px;
-    text-transform: uppercase;
+    font-size: 20px;             /* Tamaño de letra para los títulos "Este año" y "Sueños a futuro" */
+    margin-top: 0;               /* Quita el espacio arriba del título */
+    margin-bottom: 15px;         /* Separa el título de las listas hacia abajo por 15px */
+    text-transform: uppercase;   /* Convierte las cabeceras de los cubos a MAYÚSCULAS */
 }
 
+/* Ajustes a las listas dentro de los cubos (.cubo ul) */
 .cubo ul {
-    text-align: left;
-    padding-left: 20px;
-    margin: 0;
+    text-align: left;            /* Modifica la alineación del texto para que los puntos de la lista queden alineados a la izquierda */
+    padding-left: 20px;          /* Deja espacio para que las viñetas o puntos no salgan de la tarjeta */
+    margin: 0;                   /* Limpia los márgenes externos de la lista */
 }
 
+/* Ajustes a cada punto de la lista dentro de los cubos (.cubo li) */
 .cubo li {
-    margin-bottom: 10px;
-    font-size: 15px;
-    line-height: 1.4;
+    margin-bottom: 10px;          /* Separa una meta de la otra hacia abajo */
+    font-size: 15px;             /* Define el tamaño del texto de cada meta */
+    line-height: 1.4;            /* Da un espacio cómodo entre renglones si la meta ocupa dos líneas */
 }
 
+/* Estilos para el contenedor del pie de página (<footer class="footer-form">) */
 .footer-form {
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
+    text-align: center;          /* Centra el formulario y su texto al final de la pantalla */
+    padding: 20px;               /* Añade separación en el área del footer */
+    margin-top: 20px;            /* Separa el pie de página de los cubos */
 }
 
+/* Estilos para el texto del formulario dentro del footer (.footer-form p) */
 .footer-form p {
-    color: rgb(63, 20, 180);
-    font-weight: bold;
-    font-size: 18px;
-    margin: 0;
+    color: rgb(63, 20, 180);     /* Aplica el mismo color morado/azul del título principal */
+    font-weight: bold;           /* Pone el texto "Próximamente" en negrita para resaltar */
+    font-size: 18px;             /* Aumenta el tamaño de letra del pie de página */
+    margin: 0;                   /* Quita los espacios alrededor del párrafo */
 }

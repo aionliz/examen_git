@@ -27,7 +27,7 @@ poner aqui el nombre de usuario de github.
 20.-
 21.-
 22.-TKS-Grey
-23.-
+23.-gianluca777777
 24.-
 25.-
 26.-
@@ -48,4 +48,4 @@ poner aqui el nombre de usuario de github.
 41.- 
 42.-
 43.-
-44.-
+44.-Cristian Villalobos/Kris2011x

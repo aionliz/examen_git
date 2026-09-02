@@ -40,6 +40,7 @@ nav a:hover {
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
 }
 
+/* El main un poco más ancho (950px) para acomodar bien las columnas de la tabla */
 main {
     width: 950px;
     margin: 40px auto;
@@ -71,15 +72,15 @@ section h2 {
     font-size: 24px;
 }
 
+/* ESTILOS DE LA TABLA */
 table {
-    width: 100%;
-    border-collapse: collapse;
+    width: 100%; /* Ocupa todo el ancho de la caja */
+    border-collapse: collapse; /* Elimina dobles bordes en las celdas */
     margin-bottom: 35px;
     font-size: 16px;
     background-color: #ffffff;
     border-radius: 8px;
-    overflow: hidden;
-    /* Mantiene los bordes redondeados */
+    overflow: hidden; /* Asegura que las esquinas sigan redondeadas */
 }
 
 th, td {
@@ -87,22 +88,24 @@ th, td {
     text-align: left;
 }
 
+/* Estilo para los encabezados de las columnas (azul oscuro, texto blanco) */
 th {
     background: #1E3A8A;
     color: white;
     font-weight: 600;
 }
 
+/* Línea sutil debajo de cada fila */
 tbody tr {
     border-bottom: 1px solid #E2E8F0;
-    /* Líneas para dividir la tabla*/
 }
 
-/* Con esto se alternan las filas*/
+/* Colores intercalados para que la tabla sea más fácil de leer */
 tbody tr:nth-child(even) {
     background: #F1F5F9;
 }
 
+/* Clases para alinear textos numéricos */
 .texto-derecha {
     text-align: right;
 }
@@ -111,13 +114,14 @@ tbody tr:nth-child(even) {
     text-align: center;
 }
 
+/* Resaltado para las filas de "Total" */
 .fila-total {
     background-color: #E2E8F0;
-    /* Color para destacar filas */
     font-weight: bold;
     color: #0F172A;
 }
 
+/* Resaltado especial para el "Precio Final" */
 .precio-final {
     background-color: #CBD5E1;
     border-bottom: 2px solid #1E3A8A;
