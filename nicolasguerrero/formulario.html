@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MI Formulario</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+
+    <header>
+        <div class="titulo">Mi Formulario</div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="mi_historia.html">Mi Historia</a>
+            <a href="formulario.html" class="activo">Formulario</a>
+            <a href="mis_sueños.html">Mis Sueños</a>
+        </nav>
+    </header>
+
+    <div class="caja">
+        <p class="subtitulo">// CONTACTO</p>
+        <h1>Déjame un mensaje</h1>
+        <p class="texto2">
+            Dejo mi contacto por gmail sobre cualquier duda o pregunta.
+        </p>
+
+        <form>
+            <div>
+                <label>Nombre</label>
+                <input type="text" placeholder="nombre">
+            </div>
+
+            <div>
+                <label>Correo electrónico</label>
+                <input type="email" placeholder="Correo electronico">
+            </div>
+
+            <div>
+                <label>Asunto</label>
+                <select>
+                    <option>Pregunta</option>
+                    <option>Sugerencia</option>
+                    <option>Otro</option>
+                </select>
+            </div>
+
+            <div>
+                <label>¿Cómo llegaste a mi?</label>
+                <div class="opciones-radio">
+                    <label><input type="radio" name="origen"> Redes sociales</label>
+                    <label><input type="radio" name="origen"> Un amigo</label>
+                    <label><input type="radio" name="origen"> Buscador</label>
+                </div>
+            </div>
+
+            <div>
+                <label>Mensaje</label>
+                <textarea rows="4" placeholder="Escribe aquí tu mensaje..."></textarea>
+            </div>
+
+            <button type="submit">ENVIAR</button>
+        </form>
+    </div>
+
+    <footer>
+        <div>© 2026 Nicolas Guerrero</div>
+        <div>Lenguajes usados: HTML Y CSS</div>
+    </footer>
+
+</body>
+</html>
