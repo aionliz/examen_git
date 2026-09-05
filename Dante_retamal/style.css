@@ -1,0 +1,90 @@
+body {
+    background-color: #eeeeee;
+    font-family: Arial, sans-serif;
+    color: #333;
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 40px;
+}
+
+h2 {
+    color: #3498db;
+    margin-top: 30px;
+}
+
+h3 {
+    color: #555;
+}
+
+h5 {
+    color: #2c3e50;
+    font-size: 20px;
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+/* Lista de habilidades */
+
+ul {
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 8px;
+}
+
+li {
+    margin: 10px;
+}
+
+/* Formulario */
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #217dbb;
+}
